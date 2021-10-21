@@ -1,3 +1,8 @@
+## Code Share
+https://codeshare.io/0gVB98 - API
+https://codeshare.io/wnPKrJ - React
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

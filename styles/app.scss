@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#__next {
+    height: 100%;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    padding: 0;
+}
+
+@import './login.scss';
