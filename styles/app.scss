@@ -1,11 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
+@import './config.scss';
+@import './login.scss';
+@import './header.scss';
+
+@font-face {
+    font-family: 'Biennale Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../public/fonts/BiennaleRegular.otf') format('opentype');
+}
 
 html {
     height: 100%;
+    font-family: 'Biennale Regular';
 }
 
 body {
     height: 100%;
+    font-family: 'Biennale Regular';
 }
 
 #__next {
@@ -20,4 +32,13 @@ body {
     padding: 0;
 }
 
-@import './login.scss';
+button{
+    display: block;
+    border: none;
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 12px;
+    font-size: 16px;
+    height: 40px;
+    align-items: center;
+}

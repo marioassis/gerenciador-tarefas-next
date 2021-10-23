@@ -1,6 +1,7 @@
 import type {NextApiRequest, NextApiResponse} from 'next';
 import { dbConnect } from '../../middlewares/dbConnect';
 import { jwtValidator } from '../../middlewares/jwtValidator';
+import { corsPolicy } from '../../middlewares/corsPolicy';
 import { TaskModel } from '../../models/TaskModel';
 import { DefaultResponse } from '../../types/DefaultResponse';
 import { GetTasksRequest } from '../../types/GetTasksRequest';
@@ -152,4 +153,4 @@ const getTasks = async ( req : NextApiRequest, res : NextApiResponse<DefaultResp
     return res.status(200).json(result);
 }
 
-export default dbConnect(jwtValidator(handler));
+export default corsPolicy(dbConnect(jwtValidator(handler)));
