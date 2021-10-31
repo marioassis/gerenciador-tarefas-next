@@ -72,6 +72,19 @@
         background-color: $mediumGreyColor;
     }
 
+    .new-user{
+        font-size: 13px;
+        text-align: center;
+        color: $mediumGreyColor;
+        margin-top: 15px;
+
+        span a{
+            font-weight: 600;
+            //text-decoration: none;
+            color: $mediumGreyColor;
+        }
+    }
+
     @media screen and(min-width:1024px) {
         width: 100%;
         display: flex;
@@ -89,9 +102,7 @@
         }
 
         form {
-            border-style: solid;
-            border-color: $primaryColor;
-            border-width: 0.1em;
+            border: 0.1em solid $primaryColor;
             border-radius: 32px;
             padding: 80px 40px;
 
@@ -106,4 +117,8 @@
             }
         }
     }
+}
+
+.register form {
+    padding: 30px 40px 40px 40px;
 }

@@ -46,9 +46,7 @@
             cursor: pointer;
 
             &:hover{
-                border-color: $primaryColor;
-                border-style: solid;
-                border-width: 1px;
+                border: 1px solid $primaryColor;
             }
         }
     }

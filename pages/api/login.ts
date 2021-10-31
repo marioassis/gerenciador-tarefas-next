@@ -6,16 +6,11 @@ import { User } from '../../types/User';
 import { dbConnect } from '../../middlewares/dbConnect';
 import { corsPolicy } from '../../middlewares/corsPolicy';
 import jwt from 'jsonwebtoken';
+import { LoginResponse } from '../../types/LoginResponse';
 
 type LoginRequest = {
     login : string
     password : string
-}
-
-type LoginResponse = {
-    name : string
-    email : string
-    token : string
 }
 
 const handler = async ( req : NextApiRequest, res : NextApiResponse<DefaultResponse | LoginResponse>) => {
