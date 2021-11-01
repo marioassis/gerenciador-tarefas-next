@@ -43,7 +43,7 @@ export const Register: NextPage<AccessTokenProps> = ({
                 localStorage.setItem('accessToken', result.data.token);
                 localStorage.setItem('userName', result.data.name);
                 localStorage.setItem('userMail', result.data.email);
-                setToken(result.data.token);
+                return setToken(result.data.token);
             } else {
                 setError('Não foi possivel processar o cadastro, tente novamente');
             }
